@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void) {
+	int testcase;
+	scanf("%d",&testcase);
+	for(int i=0;i<testcase;i++)
+	{
+	    int x,y,p1,p2,p3;
+	    scanf("%d",&x);
+	    scanf("%d",&y);
+	    p1=5*x;
+	    p2=3*x+1*y;
+	    p3=x+2*y;
+	    if(p1<p2 && p1<p3)
+	    {
+	        printf("%d\n",p1);
+	    }
+	    else if(p2<p1 && p2<p3)
+	    {
+	        printf("%d\n",p2);
+	    }
+	    else (printf("%d\n",p3));
+	}
+	return 0;
+}
