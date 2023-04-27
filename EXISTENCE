@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void) {
+	int testcase;
+	scanf("%d",&testcase);
+	for(int i=0;i<testcase;i++)
+	{
+	    long x,y,lhs,rhs;
+	    scanf("%ld",&x);
+	    scanf("%ld",&y);
+	    lhs=(x*x*x*x)+4*(y*y);
+	    rhs=4*(x*x)*y;
+	    if (lhs==rhs)
+	    {
+	        printf("YES\n");
+	    }
+	    else
+	    {
+	        printf("NO\n");
+	    }
+	}
+	return 0;
+}
